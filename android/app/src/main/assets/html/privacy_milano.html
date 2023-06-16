@@ -1,0 +1,814 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="LibreOffice 4.1.6.2 (Linux)">
+	<META NAME="AUTHOR" CONTENT="Miglietta  Marco">
+	<META NAME="CREATED" CONTENT="20200902;142700000000000">
+	<META NAME="CHANGEDBY" CONTENT="Gentile  Claudia">
+	<META NAME="CHANGED" CONTENT="20200918;140400000000000">
+	<META NAME="AppVersion" CONTENT="16.0000">
+	<META NAME="Company" CONTENT="Guiffre Lefebvre Sarrut">
+	<META NAME="DocSecurity" CONTENT="0">
+	<META NAME="HyperlinksChanged" CONTENT="false">
+	<META NAME="LinksUpToDate" CONTENT="false">
+	<META NAME="ScaleCrop" CONTENT="false">
+	<META NAME="ShareDoc" CONTENT="false">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+
+	<style>
+		@font-face {
+			font-family: 'RobotoCondensed-Regular';
+			src: url('RobotoCondensed-Regular.ttf'), url("file:///android_asset/fonts/RobotoCondensed-Regular.ttf")
+		}
+
+		@font-face {
+			font-family: 'RobotoCondensed-Bold';
+			src: url('RobotoCondensed-Bold.ttf'), url("file:///android_asset/fonts/RobotoCondensed-Bold.ttf")
+		}
+
+		@font-face {
+			font-family: 'Roboto-Bold';
+			src: url('Roboto-Bold.ttf'), url("file:///android_asset/fonts/Roboto-Bold.ttf")
+		}
+
+		@font-face {
+			font-family: 'icomoon';
+			src: url('icomoon.ttf'), url("file:///android_asset/fonts/icomoon.ttf")
+		}
+
+		a {
+			-webkit-tap-highlight-color: transparent;
+		}
+
+		body {
+			margin: 20px;
+			font-family: "RobotoCondensed-Regular";
+		}
+
+		b {
+			font-family: "RobotoCondensed-Bold";
+		}
+	</style>
+	<STYLE TYPE="text/css">
+		<!--
+		@page {
+			margin-left: 0.79in;
+			margin-right: 0.79in;
+			margin-top: 0.98in;
+			margin-bottom: 0.79in
+		}
+
+		P {
+			margin-bottom: 0.08in;
+			direction: ltr;
+			widows: 2;
+			orphans: 2
+		}
+
+		A:link {
+			color: #0000ff;
+			so-language: zxx
+		}
+		-->
+	</STYLE>
+
+	<script type="text/javascript">
+
+		(function () {
+			function findParent(tagname, el) {
+				while (el) {
+					if ((el.nodeName || el.tagName).toLowerCase() === tagname.toLowerCase()) {
+						return el;
+					}
+					el = el.parentNode;
+				}
+				return null;
+			}
+
+			function interceptClickEvent(e) {
+				var id;
+				var href;
+				var target = findParent('a', e.target || e.srcElement);
+
+				if (target) {
+
+					if (target.getAttribute('data-type') === "attachment") {
+						let type = target.getAttribute('data-type');
+						let href = target.getAttribute('data-href');
+						var jsonString = JSON.stringify({ "type": type, "href": href })
+						window.ReactNativeWebView.postMessage(jsonString);
+					}
+					else {
+						id = target.getAttribute('id_doc_master');
+						href = target.getAttribute('href');
+						var jsonString = JSON.stringify({ "id_doc_master": id, "href": href })
+						window.ReactNativeWebView.postMessage(jsonString);
+					}
+					e.preventDefault();
+				}
+			}
+
+			if (document.addEventListener) {
+				document.addEventListener('click', interceptClickEvent);
+			} else if (document.attachEvent) {
+				document.attachEvent('onclick', interceptClickEvent);
+			}
+		})();
+	</script>
+</HEAD>
+
+
+<BODY LANG="it-IT">
+	<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0.11in; line-height: 107%">
+		<B>Informativa Privacy</B>
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%"><BR><BR>
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		L’Ordine
+		degli Avvocati di Milano, con sede a Milano, Via Carlo Freguglia, 1 è
+		il Titolare del trattamento dei dati personali raccolti su questo app
+		ai sensi e per gli effetti del Regolamento UE 679/2016
+		(GDPR).<BR>Conformemente all'impegno e alla cura che l’Ordine degli
+		Avvocati di Milano dedica alla tutela dei dati personali, ti
+		informiamo sulle modalità, finalità e ambito di comunicazione e
+		diffusione dei tuoi dati personali e sui tuoi diritti, in conformità
+		all'art. 13 del GDPR.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%"><BR><BR>
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+
+		1.
+		CATEGORIE DI DATI PERSONALI TRATTATI DAL TITOLARE DEL
+		TRATTAMENTO<BR><BR>Per offrirti i servizi previsti dai propri siti
+		internet L’Ordine degli Avvocati di Milano (di seguito l’Ordine),
+		in qualità di Titolare del trattamento, deve trattare alcuni dati
+		personali necessari per l'erogazione dei servizi.<BR>Questi dati
+		possono essere forniti implicitamente dagli strumenti che utilizzi
+		per accedere e fruire dei servizi o possono essere forniti in modo
+		esplicito da te.<BR>L’ordine potrà trattare le seguenti categorie
+		di dati personali degli utenti:<BR>• dati&nbsp;tecnici di
+		navigazione&nbsp;relativi all'indirizzo IP, ai codici identificativi
+		dei dispositivi utilizzati dall'utente per la fruizione dell’app o
+		dei servizi, alle caratteristiche del browser e agli orari di
+		accesso;<BR>•&nbsp;dati comuni identificativi&nbsp;forniti
+		dall'utente (es. nome, cognome, email, numero di telefono, ecc.) per
+		la fruizione dei prodotti e dei servizi.<BR><BR><BR>2. FINALITÀ E
+		BASI GIURIDICHE DEL TRATTAMENTO<BR><BR>I dati e i cookies da te
+		ricevuti saranno trattati dall’Ordine esclusivamente con modalità
+		e procedure necessarie per fornirti i servizi richiesti o
+		sottoscritti (
+
+
+		<B>Finalità
+			contrattuali</B>
+
+
+		).
+		<BR>In particolare, i tuoi dati saranno utilizzati per consentire
+		l’accesso all’app ed usufruire di tutti i servizi offerti tramite
+		l’app. La
+
+
+		<B>base
+			giuridica del trattamento</B>
+
+
+
+		è l’adempimento di obblighi legali nonché l’esecuzione di
+		compiti di interesse pubblico di cui è investito l’Ordine. Laddove
+		il trattamento dei dati fosse operato al di fuori di tale base
+		giuridica verrà fornita un’informativa e richiesto un consenso al
+		trattamento. <BR><BR>
+		<BR><BR>
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+
+		3.
+		DIFFUSIONE, COMUNICAZIONE E SOGGETTI CHE ACCEDONO AI DATI<BR><BR>Informiamo
+		inoltre che i dati raccolti non saranno mai diffusi e non saranno
+		oggetto di comunicazione senza Suo esplicito consenso, salvo le
+		comunicazioni necessarie che possono comportare il trasferimento di
+		dati ad enti pubblici, a consulenti o ad altri soggetti, anche in
+		qualità di responsabili esterni del trattamento, per l’adempimento
+		degli obblighi di legge. <BR><BR>
+		<BR><BR>
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+
+		4.
+		TRASFERIMENTO DI DATI ALL’ESTERO<BR><BR>I tuoi dati personali
+		saranno trattati dall’Ordine all’interno del territorio
+		dell’Unione Europea.<BR>Qualora per questioni di natura tecnica e/o
+		operativa si renda necessario avvalersi di soggetti ubicati al di
+		fuori dell’Unione Europea, oppure si renda necessario trasferire
+		alcuni dei dati raccolti verso sistemi tecnici e servizi gestiti
+		in&nbsp;
+		<EM>
+
+			cloud
+
+		</EM>
+
+		&nbsp;e
+		localizzati al di fuori dell’area dell’Unione Europea, il
+		trattamento sarà regolato in conformità a quanto previsto dal capo
+		V del Regolamento e autorizzato in base a specifiche decisioni
+		dell’Unione Europea. Saranno quindi adottate tutte le cautele
+		necessarie al fine di garantire la più totale protezione dei dati
+		personali basando tale trasferimento: a) su decisioni di adeguatezza
+		dei paesi terzi destinatari espressi dalla Commissione Europea; b) su
+		garanzie adeguate espresse dal soggetto terzo destinatario ai sensi
+		dell’art. 46 del Regolamento; c) sull’adozione di norme
+		vincolanti d’impresa, cd.&nbsp;
+		<EM>
+
+			Corporate
+			binding rules
+
+		</EM>
+
+		.<BR><BR><BR>5.
+		DURATA DEL TRATTAMENTO E CONSERVAZIONE DEI DATI PERSONALI<BR><BR>L’Ordine
+		in accordo con l’Art. 5.1 e) del GDPR tratterà i dati da te
+		conferiti per tutta la durata di esecuzione dei servizi richiesti e
+		li conserverà per il periodo di tempo necessario per il
+		conseguimento delle finalità per le quali sono raccolti e trattati.
+		<BR><BR><BR>6. DIRITTI DELL’INTERESSATO<BR><BR>In ogni momento, Lei
+		potrà esercitare, ai sensi degli articoli dal 15 al 22 del
+		Regolamento UE n. 2016/679, il diritto di:<BR>a) chiedere la conferma
+		dell’esistenza o meno di propri dati personali;<BR>b) ottenere le
+		indicazioni circa le finalità del trattamento, le categorie dei dati
+		personali, i destinatari o le categorie di destinatari a cui i dati
+		personali sono stati o saranno comunicati e, quando possibile, il
+		periodo di conservazione;<BR>c) ottenere la rettifica e la
+		cancellazione dei dati;<BR>d) ottenere la limitazione del
+		trattamento;<BR>e) ottenere la portabilità dei dati, ossia riceverli
+		da un titolare del trattamento, in un formato strutturato, di uso
+		comune e leggibile da dispositivo automatico, e trasmetterli ad un
+		altro titolare del trattamento senza impedimenti;<BR>f) opporsi al
+		trattamento in qualsiasi momento;<BR>g) chiedere al titolare del
+		trattamento l’accesso ai dati personali e la rettifica o la
+		cancellazione degli stessi o la limitazione del trattamento che lo
+		riguardano o di opporsi al loro trattamento, oltre al diritto alla
+		portabilità dei dati;<BR>h) revocare il consenso in qualsiasi
+		momento senza pregiudicare la liceità del trattamento basata sul
+		consenso prestato prima della revoca;<BR>i) proporre reclamo a
+		un’autorità di controllo. Può esercitare i Suoi diritti con
+		richiesta scritta inviata all’Ordine degli Avvocati di Milano,
+		all’indirizzo postale della sede legale o all’indirizzo
+		mail&nbsp;presidenza@ordineavvocatimilano.it<BR>
+		<BR><BR>
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+
+		7.
+		RESPONSABILE PRIVACY<BR><BR>Il responsabile della protezione dei dati
+		(DPO) è l’Avvocato Alice Pisapia, del Foro di Milano,
+		Via Domenichino 16, 20149 Milano.
+
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		<BR><BR><BR>
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		8.
+		COOKIE POLICY
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Questa
+		Applicazione raccoglie alcuni Dati Personali dei propri Utenti.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%"><BR><BR>
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Titolare
+		del Trattamento dei Dati
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Ordine
+		degli Avvocati di Milano - Via Carlo Freguglia 1, 20122 Milano
+		(Italia) tel.025492921
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		<B>Indirizzo
+			email del Titolare:</B>
+		&nbsp;segreteria@ordineavvocatimilano.it
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Tipologie
+		di Dati raccolti
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Fra
+		i Dati Personali raccolti da questa Applicazione, in modo autonomo o
+		tramite terze parti, ci sono: Cookie; Dati di utilizzo.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Dettagli
+		completi su ciascuna tipologia di dati raccolti sono forniti nelle
+		sezioni dedicate di questa privacy policy o mediante specifici testi
+		informativi visualizzati prima della raccolta dei dati stessi.<BR>I
+		Dati Personali possono essere liberamente forniti dall'Utente o, nel
+		caso di Dati di Utilizzo, raccolti automaticamente durante l'uso di
+		questa Applicazione.<BR>Se non diversamente specificato, tutti i Dati
+		richiesti da questa Applicazione sono obbligatori. Se l’Utente
+		rifiuta di comunicarli, potrebbe essere impossibile per questa
+		Applicazione fornire il Servizio. Nei casi in cui questa Applicazione
+		indichi alcuni Dati come facoltativi, gli Utenti sono liberi di
+		astenersi dal comunicare tali Dati, senza che ciò abbia alcuna
+		conseguenza sulla disponibilità del Servizio o sulla sua
+		operatività.<BR>Gli Utenti che dovessero avere dubbi su quali Dati
+		siano obbligatori, sono incoraggiati a contattare il
+		Titolare.<BR>L’eventuale utilizzo di Cookie - o di altri strumenti
+		di tracciamento - da parte di questa Applicazione o dei titolari dei
+		servizi terzi utilizzati da questa Applicazione, ove non diversamente
+		precisato, ha la finalità di fornire il Servizio richiesto
+		dall'Utente, oltre alle ulteriori finalità descritte nel presente
+		documento e nella Cookie Policy, se disponibile.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		L'Utente
+		si assume la responsabilità dei Dati Personali di terzi ottenuti,
+		pubblicati o condivisi mediante questa Applicazione e garantisce di
+		avere il diritto di comunicarli o diffonderli, liberando il Titolare
+		da qualsiasi responsabilità verso terzi.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Modalità
+		e luogo del trattamento dei Dati raccolti
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Modalità
+		di trattamento
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Il
+		Titolare adotta le opportune misure di sicurezza volte ad impedire
+		l’accesso, la divulgazione, la modifica o la distruzione non
+		autorizzate dei Dati Personali.<BR>Il trattamento viene effettuato
+		mediante strumenti informatici e/o telematici, con modalità
+		organizzative e con logiche strettamente correlate alle finalità
+		indicate. Oltre al Titolare, in alcuni casi, potrebbero avere accesso
+		ai Dati altri soggetti coinvolti nell’organizzazione di questa
+		Applicazione (personale amministrativo, commerciale, marketing,
+		legali, amministratori di sistema) ovvero soggetti esterni (come
+		fornitori di servizi tecnici terzi, corrieri postali, hosting
+		provider, società informatiche, agenzie di comunicazione) nominati
+		anche, se necessario, Responsabili del Trattamento da parte del
+		Titolare. L’elenco aggiornato dei Responsabili potrà sempre essere
+		richiesto al Titolare del Trattamento.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Base
+		giuridica del trattamento
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Il
+		Titolare tratta Dati Personali relativi all’Utente in caso sussista
+		una delle seguenti condizioni:
+	</P>
+	<UL>
+		<LI>
+			<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+				l’Utente ha prestato il
+				consenso per una o più finalità specifiche; Nota: in alcuni
+				ordinamenti il Titolare può essere autorizzato a trattare Dati
+				Personali senza che debba sussistere il consenso dell’Utente o
+				un’altra delle basi giuridiche specificate di seguito, fino a
+				quando l’Utente non si opponga (“opt-out”) a tale trattamento.
+				Ciò non è tuttavia applicabile qualora il trattamento di Dati
+				Personali sia regolato dalla legislazione europea in materia di
+				protezione dei Dati Personali;
+			</P>
+		<LI>
+			<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+				il trattamento è necessario
+				all'esecuzione di un contratto con l’Utente e/o all'esecuzione di
+				misure precontrattuali;
+			</P>
+		<LI>
+			<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+				il trattamento è necessario per
+				adempiere un obbligo legale al quale è soggetto il Titolare;
+			</P>
+		<LI>
+			<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+				il trattamento è necessario per
+				l'esecuzione di un compito di interesse pubblico o per l'esercizio
+				di pubblici poteri di cui è investito il Titolare;
+			</P>
+		<LI>
+			<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+				il trattamento è necessario per
+				il perseguimento del legittimo interesse del Titolare o di terzi.
+			</P>
+	</UL>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		È
+		comunque sempre possibile richiedere al Titolare di chiarire la
+		concreta base giuridica di ciascun trattamento ed in particolare di
+		specificare se il trattamento sia basato sulla legge, previsto da un
+		contratto o necessario per concludere un contratto.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Luogo
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		I
+		Dati sono trattati presso le sedi operative del Titolare ed in ogni
+		altro luogo in cui le parti coinvolte nel trattamento siano
+		localizzate. Per ulteriori informazioni, contatta il Titolare.<BR>I
+		Dati Personali dell’Utente potrebbero essere trasferiti in un paese
+		diverso da quello in cui l’Utente si trova. Per ottenere ulteriori
+		informazioni sul luogo del trattamento l’Utente può fare
+		riferimento alla sezione relativa ai dettagli sul trattamento dei
+		Dati Personali.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		L’Utente
+		ha diritto a ottenere informazioni in merito alla base giuridica del
+		trasferimento di Dati al di fuori dell’Unione Europea o ad
+		un’organizzazione internazionale di diritto internazionale pubblico
+		o costituita da due o più paesi, come ad esempio l’ONU, nonché in
+		merito alle misure di sicurezza adottate dal Titolare per proteggere
+		i Dati.<BR><BR>L’Utente può verificare se abbia luogo uno dei
+		trasferimenti appena descritti esaminando la sezione di questo
+		documento relativa ai dettagli sul trattamento di Dati Personali o
+		chiedere informazioni al Titolare contattandolo agli estremi
+		riportati in apertura.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Periodo
+		di conservazione
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		I
+		Dati sono trattati e conservati per il tempo richiesto dalle finalità
+		per le quali sono stati raccolti.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Pertanto:
+	</P>
+	<UL>
+		<LI>
+			<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+				I Dati Personali raccolti per
+				scopi collegati all’esecuzione di un contratto tra il Titolare e
+				l’Utente saranno trattenuti sino a quando sia completata
+				l’esecuzione di tale contratto.
+			</P>
+		<LI>
+			<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+				I Dati Personali raccolti per
+				finalità riconducibili all’interesse legittimo del Titolare
+				saranno trattenuti sino al soddisfacimento di tale interesse.
+				L’Utente può ottenere ulteriori informazioni in merito
+				all’interesse legittimo perseguito dal Titolare nelle relative
+				sezioni di questo documento o contattando il Titolare.
+			</P>
+	</UL>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Quando
+		il trattamento è basato sul consenso dell’Utente, il Titolare può
+		conservare i Dati Personali più a lungo sino a quando detto consenso
+		non venga revocato. Inoltre, il Titolare potrebbe essere obbligato a
+		conservare i Dati Personali per un periodo più lungo in ottemperanza
+		ad un obbligo di legge o per ordine di un’autorità.<BR><BR>Al
+		termine del periodo di conservazione i Dati Personali saranno
+		cancellati. Pertanto, allo spirare di tale termine il diritto di
+		accesso, cancellazione, rettificazione ed il diritto alla portabilità
+		dei Dati non potranno più essere esercitati.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Finalità
+		del Trattamento dei Dati raccolti
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		I
+		Dati dell’Utente sono raccolti per consentire al Titolare di
+		fornire il Servizio, adempiere agli obblighi di legge, rispondere a
+		richieste o azioni esecutive, tutelare i propri diritti ed interessi
+		(o quelli di Utenti o di terze parti), individuare eventuali attività
+		dolose o fraudolente, nonché per le seguenti finalità: Statistica e
+		Visualizzazione di contenuti da piattaforme esterne.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Per
+		ottenere informazioni dettagliate sulle finalità del trattamento e
+		sui Dati Personali trattati per ciascuna finalità, l’Utente può
+		fare riferimento alla sezione “Dettagli sul trattamento dei Dati
+		Personali”.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Dettagli
+		sul trattamento dei Dati Personali
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		I
+		Dati Personali sono raccolti per le seguenti finalità ed utilizzando
+		i seguenti servizi:
+	</P>
+	<UL>
+		<LI>
+			<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+				Statistica
+			</P>
+	</UL>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		I
+		servizi contenuti nella presente sezione permettono al Titolare del
+		Trattamento di monitorare e analizzare i dati di traffico e servono a
+		tener traccia del comportamento dell’Utente.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Google
+		Analytics con IP anonimizzato (Google Inc.)
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Google
+		Analytics è un servizio di analisi web fornito da Google Inc.
+		(“Google”). Google utilizza i Dati Personali raccolti allo scopo
+		di tracciare ed esaminare l’utilizzo di questa Applicazione,
+		compilare report e condividerli con gli altri servizi sviluppati da
+		Google.<BR>Google potrebbe utilizzare i Dati Personali per
+		contestualizzare e personalizzare gli annunci del proprio network
+		pubblicitario.<BR>Questa integrazione di Google Analytics rende
+		anonimo il tuo indirizzo IP. L'anonimizzazione funziona abbreviando
+		entro i confini degli stati membri dell'Unione Europea o in altri
+		Paesi aderenti all'accordo sullo Spazio Economico Europeo l'indirizzo
+		IP degli Utenti. Solo in casi eccezionali, l'indirizzo IP sarà
+		inviato ai server di Google ed abbreviato all'interno degli Stati
+		Uniti.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Dati
+		Personali trattati: Cookie; Dati di utilizzo.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Luogo
+		del trattamento: USA –&nbsp;<A HREF="https://www.google.com/intl/it/policies/privacy/">Privacy
+			Policy</A>&nbsp;–&nbsp;<A HREF="https://tools.google.com/dlpage/gaoptout?hl=it">Opt
+			Out</A>.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%"><BR><BR>
+	</P>
+	<UL>
+		<LI>
+			<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+				Visualizzazione di contenuti da
+				piattaforme esterne
+			</P>
+	</UL>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Questo
+		tipo di servizi permette di visualizzare contenuti ospitati su
+		piattaforme esterne direttamente dalle pagine di questa Applicazione
+		e di interagire con essi.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Nel
+		caso in cui sia installato un servizio di questo tipo, è possibile
+		che, anche nel caso gli Utenti non utilizzino il servizio, lo stesso
+		raccolga dati di traffico relativi alle pagine in cui è installato.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%"><BR><BR>
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Widget
+		Google Maps (Google Inc.)
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Google
+		Maps è un servizio di visualizzazione di mappe gestito da Google
+		Inc. che permette a questa Applicazione di integrare tali contenuti
+		all’interno delle proprie pagine.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Dati
+		Personali trattati: Cookie; Dati di utilizzo.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Luogo
+		del trattamento: USA – Privacy Policy.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%"><BR><BR>
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Diritti
+		dell’Utente
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Gli
+		Utenti possono esercitare determinati diritti con riferimento ai Dati
+		trattati dal Titolare.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		In
+		particolare, l’Utente ha il diritto di:
+	</P>
+	<UL>
+		<LI>
+			<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+				<B>revocare il consenso in ogni
+					momento.</B>
+				&nbsp;L’Utente
+				può revocare il consenso al trattamento dei propri Dati Personali
+				precedentemente espresso.
+			</P>
+		<LI>
+			<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+				<B>opporsi al trattamento dei
+					propri Dati.</B>
+				&nbsp;L’Utente
+				può opporsi al trattamento dei propri Dati quando esso avviene su
+				una base giuridica diversa dal consenso. Ulteriori dettagli sul
+				diritto di opposizione sono indicati nella sezione sottostante.
+			</P>
+		<LI>
+			<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+				<B>accedere ai propri
+					Dati.</B>
+				&nbsp;L’Utente
+				ha diritto ad ottenere informazioni sui Dati trattati dal Titolare,
+				su determinati aspetti del trattamento ed a ricevere una copia dei
+				Dati trattati.
+			</P>
+		<LI>
+			<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+				<B>verificare e chiedere la
+					rettificazione.</B>
+				&nbsp;L’Utente
+				può verificare la correttezza dei propri Dati e richiederne
+				l’aggiornamento o la correzione.
+			</P>
+		<LI>
+			<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+				<B>ottenere la limitazione del
+					trattamento.</B>
+				&nbsp;Quando
+				ricorrono determinate condizioni, l’Utente può richiedere la
+				limitazione del trattamento dei propri Dati. In tal caso il Titolare
+				non tratterà i Dati per alcun altro scopo se non la loro
+				conservazione.
+			</P>
+		<LI>
+			<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+				<B>ottenere la cancellazione o
+					rimozione dei propri Dati Personali.</B>
+				&nbsp;Quando
+				ricorrono determinate condizioni, l’Utente può richiedere la
+				cancellazione dei propri Dati da parte del Titolare.
+			</P>
+		<LI>
+			<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+				<B>ricevere i propri Dati o
+					farli trasferire ad altro titolare.</B>
+				&nbsp;L’Utente
+				ha diritto di ricevere i propri Dati in formato strutturato, di uso
+				comune e leggibile da dispositivo automatico e, ove tecnicamente
+				fattibile, di ottenerne il trasferimento senza ostacoli ad un altro
+				titolare. Questa disposizione è applicabile quando i Dati sono
+				trattati con strumenti automatizzati ed il trattamento è basato sul
+				consenso dell’Utente, su un contratto di cui l’Utente è parte o
+				su misure contrattuali ad esso connesse.
+			</P>
+		<LI>
+			<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+				<B>proporre reclamo.</B>
+				&nbsp;L’Utente
+				può proporre un reclamo all’autorità di controllo della
+				protezione dei dati personali competente o agire in sede giudiziale.
+			</P>
+	</UL>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Dettagli
+		sul diritto di opposizione
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Quando
+		i Dati Personali sono trattati nell’interesse pubblico,
+		nell’esercizio di pubblici poteri di cui è investito il Titolare
+		oppure per perseguire un interesse legittimo del Titolare, gli Utenti
+		hanno diritto ad opporsi al trattamento per motivi connessi alla loro
+		situazione particolare.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Si
+		fa presente agli Utenti che, ove i loro Dati fossero trattati con
+		finalità di marketing diretto, possono opporsi al trattamento senza
+		fornire alcuna motivazione. Per scoprire se il Titolare tratti dati
+		con finalità di marketing diretto gli Utenti possono fare
+		riferimento alle rispettive sezioni di questo documento.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Come
+		esercitare i diritti
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Per
+		esercitare i diritti dell’Utente, gli Utenti possono indirizzare
+		una richiesta agli estremi di contatto del Titolare indicati in
+		questo documento. Le richieste sono depositate a titolo gratuito e
+		evase dal Titolare nel più breve tempo possibile, in ogni caso entro
+		un mese.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Cookie
+		Policy
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Questa
+		Applicazione fa utilizzo di Strumenti di Tracciamento. Per saperne di
+		più, l’Utente può consultare la&nbsp;<A HREF="https://www.iubenda.com/privacy-policy/gdpr/359865/cookie-policy">
+			<U>Cookie
+				Policy</U>
+		</A>
+		.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Ulteriori
+		informazioni sul trattamento
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Difesa
+		in giudizio
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		I
+		Dati Personali dell’Utente possono essere utilizzati da parte del
+		Titolare in giudizio o nelle fasi preparatorie alla sua eventuale
+		instaurazione per la difesa da abusi nell'utilizzo di questa
+		Applicazione o dei Servizi connessi da parte dell’Utente.<BR>L’Utente
+		dichiara di essere consapevole che il Titolare potrebbe essere
+		obbligato a rivelare i Dati per ordine delle autorità pubbliche.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Informative
+		specifiche
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Su
+		richiesta dell’Utente, in aggiunta alle informazioni contenute in
+		questa privacy policy, questa Applicazione potrebbe fornire
+		all'Utente delle informative aggiuntive e contestuali riguardanti
+		Servizi specifici, o la raccolta ed il trattamento di Dati Personali.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Log
+		di sistema e manutenzione
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Per
+		necessità legate al funzionamento ed alla manutenzione, questa
+		Applicazione e gli eventuali servizi terzi da essa utilizzati
+		potrebbero raccogliere log di sistema, ossia file che registrano le
+		interazioni e che possono contenere anche Dati Personali, quali
+		l’indirizzo IP Utente.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Informazioni
+		non contenute in questa policy
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Ulteriori
+		informazioni in relazione al trattamento dei Dati Personali potranno
+		essere richieste in qualsiasi momento al Titolare del Trattamento
+		utilizzando gli estremi di contatto.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Risposta
+		alle richieste “Do Not Track”
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Questa
+		Applicazione non supporta le richieste “Do Not Track”.<BR>Per
+		scoprire se gli eventuali servizi di terze parti utilizzati le
+		supportino, l'Utente è invitato a consultare le rispettive privacy
+		policy.
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%">
+		Modifiche
+		a questa privacy policy
+	</P>
+	<P CLASS="western" STYLE="margin-bottom: 0.11in; line-height: 107%"><A NAME="_GoBack"></A>
+		Il Titolare del Trattamento si
+		riserva il diritto di apportare modifiche alla presente privacy
+		policy in qualunque momento notificandolo agli Utenti su questa
+		pagina e, se possibile, su questa Applicazione nonché, qualora
+		tecnicamente e legalmente fattibile, inviando una notifica agli
+		Utenti attraverso uno degli estremi di contatto di cui è in
+		possesso. Si prega dunque di consultare con frequenza questa pagina,
+		facendo riferimento alla data di ultima modifica indicata in
+		fondo.<BR><BR>Qualora le modifiche interessino trattamenti la cui
+		base giuridica è il consenso, il Titolare provvederà a raccogliere
+		nuovamente il consenso dell’Utente, se necessario.
+	</P>
+</BODY>
+
+</HTML>

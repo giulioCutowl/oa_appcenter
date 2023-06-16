@@ -1,0 +1,35 @@
+#!/bin/bash
+
+iosname="Ordine-Avvocati-Milano"
+androidname="Ordine-Avvocati-Milano-1"
+
+cmd="appcenter codepush release-react -a dshare_mobile/";
+flags=""
+appname=${iosname}
+
+envDev="Development"
+envProd="Production"
+environment=${envProd}
+
+while getopts d:t:s: flag
+do
+	case "${flag}" in
+		d)
+    		flags="${flags} -${flag} ${environment}";;
+		t)
+			flags="${flags} -${flag} ${OPTARG}";;
+		s)
+		s=${OPTARG}
+		if [ "$s" == "ios" ]
+		then
+			appname=${iosname}
+		elif [ "$s" == "android" ] 
+		then
+            appname=${androidname}
+		fi
+	esac
+done
+
+cmd="${cmd}${appname} ${flags}"
+
+command ${cmd}

@@ -1,0 +1,2 @@
+export const UPDATE_LANGUAGE = "UPDATE_LANGUAGE";
+export const UPDATE_USER = "UPDATE_USER";

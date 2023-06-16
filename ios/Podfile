@@ -1,0 +1,78 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.3'
+
+require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+
+def shared_pods
+  config = use_native_modules!
+  use_react_native!(:path => config["reactNativePath"])
+  
+  pod 'RNDeviceInfo', :path => '../node_modules/react-native-device-info'
+
+  pod 'rn-fetch-blob', :path => '../node_modules/rn-fetch-blob'
+
+  pod 'react-native-webview', :path => '../node_modules/react-native-webview'
+
+  pod 'react-native-pdf', :path => '../node_modules/react-native-pdf'
+
+  pod 'react-native-progress-bar-android', :path => '../node_modules/@react-native-community/progress-bar-android'
+
+  pod 'react-native-progress-view', :path => '../node_modules/@react-native-community/progress-view'
+  pod 'react-native-cookies', :path => '../node_modules/@react-native-community/cookies'
+  
+  use_flipper!
+end
+
+target 'rn_ordine_avvocati_milano' do
+  
+  shared_pods
+
+end
+
+target 'rn_ordine_avvocati_roma' do
+  
+  shared_pods
+end
+
+target 'rn_ordine_avvocati_arezzo' do
+  
+  shared_pods
+end
+
+target 'rn_ordine_avvocati_salerno' do
+  
+  shared_pods
+end
+
+target 'rn_ordine_avvocati_siena' do
+  
+  shared_pods
+end
+
+target 'rn_ordine_avvocati_como' do
+  
+  shared_pods
+end
+
+target 'rn_ordine_avvocati_di_rimini' do
+  
+  shared_pods
+end
+
+target 'rn_ordine_avvocati_benevento' do
+  
+  shared_pods
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 9.0
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '9.0'
+      end
+    end
+  end
+  flipper_post_install(installer)
+end
+

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "144875507147",
+    "project_id": "gfl---app-oam",
+    "storage_bucket": "gfl---app-oam.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144875507147:android:4b73664364a57d99ac7a4e",
+        "android_client_info": {
+          "package_name": "com.gfl.ordine_avvocati_milano"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "144875507147-vm0h85dmuolm71bdqrj4dbuiik7hb3c4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFz8WzShmhNc0-v9_gTd5yuy5ISI5R_IE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "144875507147-vm0h85dmuolm71bdqrj4dbuiik7hb3c4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

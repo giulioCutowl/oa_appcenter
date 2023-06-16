@@ -1,0 +1,474 @@
+{
+    "com.gfl.ordine-avvocati-milano":{
+        "colors":{
+          "main_color":"#6797AD",
+          "icon_text_color":"#6797AD",
+          "home_selector_background_color":"transparent",
+          "menu_background_color":"#6797AD",
+          "giuffre_tint_color":"white",
+          "news_list_cell_background_color":"#6797AD",
+          "news_list_cell_title_color":"white"
+        },
+        "api_push_url":"https://4w34zior82.execute-api.eu-central-1.amazonaws.com/prod/push",
+        "x_api_key":"ruYkOXKLHt5VL9SMsU4919VTaFK5Lg1k8TJorJYn",
+        "menu_list":[
+            { "id": "news_1", "icon": "news", "description": "News" },
+            { "id": "contatti", "icon": "contatti", "description": "Contatti", "url": "https://www.ordineavvocatimilano.it/it/dove-trovarci-e-contatti/p135?source=app" },
+            { "id": "sfera", "icon": "SF_home", "description": "Login Sfera" },
+            { "id": "albo", "icon": "albo", "description": "Albo", "url": "https://sfera.sferabit.com/servizi/alboonlineBoot/indexAlbi.php?id=1080" },
+            { "id": "covid19", "icon": "evidenza", "description": "Emergenza Covid-19", "url": "https://www.ordineavvocatimilano.it/it/emergenza-coronavirus-tutti-i-provvedimenti-e-le-comunicazioni/p334?source=app" },
+            { "id": "assistenzapt", "icon": "biblioteca", "description": "Assistenza Tecnica", "url": "https://www.ordineavvocatimilano.it/it/servizio-fast-help-desk-pct/p239?source=app" },
+            { "id": "codici", "icon": "codici", "description": "Codici" },
+            { "id": "avvocati", "icon": "avvocati", "description": "Avvocati.it", "url": "https://avvocati.it/" },
+            { "id": "privacy", "icon": "privacy", "description": "Privacy" }
+          ],
+        "privacy_url":"https://mementopiu.it/Repository/privacypolicy_mementopiu.pdf",
+        "id_gestore": "1080",
+        "api_news_url": "https://www.ordineavvocatimilano.it/service/news/list/__PAGE__/99",
+        "api_news_detail_url": "https://www.ordineavvocatimilano.it/service/news/detail/",
+        "privacy_local_url":"html/privacy_milano.html",
+        "login_sfera_enabled": true,
+        "show_privacy_consent": true,
+        "cookie_privacy": [
+        {
+          "website": "https://sfera.sferabit.com/",
+          "domain": "sfera.sferabit.com",
+          "path": "/",
+          "name": "elmo_vc",
+          "value_positive":"",
+          "value_negative":"{\"level\":[\"necessary\"],\"revision\":2269323,\"data\":{\"uid\":790026382},\"rfc_cookie\":false}"
+        },
+        {
+          "website": "https://avvocati.it/",
+          "domain": ".avvocati.it",
+          "path": "/",
+          "name": "OptanonAlertBoxClosed",
+          "value_positive":"",
+          "value_negative":"0"
+        }]
+    },   
+    "com.gfl.ordine-avvocati-roma":{
+        "colors":{
+          "main_color":"#093558",
+          "icon_text_color":"#093558",
+          "home_selector_background_color":"white",
+          "menu_background_color":"#093558",
+          "giuffre_tint_color":"#25366e",
+          "news_list_cell_background_color":"white",
+          "news_list_cell_title_color":"#093558"
+        },
+        "api_push_url":"https://f2eqnq8s3e.execute-api.eu-west-1.amazonaws.com/prod/push",
+        "x_api_key":"9L71IgZhyA5l15EBiX0Ul9rxuYR9YFrJ4JGGLgeu",
+        "menu_list":[
+            { "id": "news_0", "icon": "news", "description": "News" },
+            { "id": "news_1", "icon": "news", "description": "News in evidenza" },
+            { "id": "contatti", "icon": "contatti", "description": "Contatti", "url": "https://www.ordineavvocatiroma.it/amministrazione-trasparente/struttura-degli-uffici/" },
+            { "id": "sfera", "icon": "SF_home", "description": "Login Sfera" },
+            { "id": "pec", "icon": "avvisami", "description": "PEC", "url": "https://postacertificata.ordineavvocatiroma.org/webmail/#/login" },
+            { "id": "albo", "icon": "albo", "description": "Albo", "url": "https://sfera.sferabit.com/servizi/alboonlineBoot/index.php?id=1118" },
+            { "id": "codici", "icon": "codici", "description": "Codici" },
+            { "id": "assistenzapt", "icon": "biblioteca", "description": "Formazione continua", "url": "https://avvocatiromaformazionecontinua.lextel.it/default.do" },
+            { "id": "avvocati", "icon": "avvocati", "description": "Avvocati.it", "url": "https://avvocati.it/" },
+            { "id": "patrocinio", "icon": "archivio", "description": "Patrocinio a spese dello stato", "url": "https://www.ordineavvocatiroma.it/patrocinio-a-spese-dello-stato/" },
+            { "id": "ufficio", "icon": "difese-dufficio", "description": "Difesa d'ufficio", "url": "https://www.ordineavvocatiroma.it/difensori-dufficio/" },
+            { "id": "privacy", "icon": "privacy", "description": "Privacy" }
+          ],
+        "privacy_url":"https://mementopiu.it/Repository/privacypolicy_mementopiu.pdf",
+        "id_gestore": "1118",
+        "api_news_url": "https://www.ordineavvocatiroma.it/service/news/list/__PAGE__",
+        "api_news_detail_url": "https://www.ordineavvocatiroma.it/service/news/detail/",
+        "privacy_local_url":"html/privacy_roma.html",
+        "login_sfera_enabled": true,
+        "show_privacy_consent": false
+    },   
+    "com.gfl.ordine-avvocati-arezzo":{
+        "colors":{
+          "main_color":"#4E6F7C",
+          "icon_text_color":"#4E6F7C",
+          "home_selector_background_color":"white",
+          "menu_background_color":"#4E6F7C",
+          "giuffre_tint_color":"white",
+          "news_list_cell_background_color":"white",
+          "news_list_cell_title_color":"#4E6F7C"
+        },
+        "api_push_url":"https://kat9c78dte.execute-api.eu-central-1.amazonaws.com/prod/push",
+        "x_api_key":"ruYkOXKLHt5VL9SMsU4919VTaFK5Lg1k8TJorJYn",
+        "menu_list":[
+            { "id": "news_0", "icon": "news", "description": "News" },
+            { "id": "contatti", "icon": "contatti", "description": "Contatti", "url": "https://www.ordineavvocatiarezzo.it/il-consiglio-dell-ordine/sede-e-orari-della-segreteria/" },
+            { "id": "sfera", "icon": "SF_home", "description": "Login Sfera" },
+            { "id": "albo", "icon": "albo", "description": "Albo", "url": "https://sfera.sferabit.com/servizi/alboonline/index.php?id=1007" },
+            { "id": "ufficio", "icon": "difese-dufficio", "description": "Difesa d'ufficio", "url": "https://www.ordineavvocatiarezzo.it/difese-ufficio/" },
+            { "id": "assistenzapt", "icon": "biblioteca", "description": "Per l'avvocato", "url": "https://www.ordineavvocatiarezzo.it/per-l-avvocato/"},
+            { "id": "codici", "icon": "codici", "description": "Codici" },
+            { "id": "avvocati", "icon": "avvocati", "description": "Avvocati.it", "url": "https://avvocati.it/" },
+            { "id": "privacy", "icon": "privacy", "description": "Privacy" },
+            { "id": "contatti", "icon": "contatti", "description": "Fonti" }
+          ],
+        "privacy_url":"https://mementopiu.it/Repository/privacypolicy_mementopiu.pdf",
+        "id_gestore": "1007",
+        "api_news_url": "https://www.ordineavvocatiarezzo.it/service/news/list/__PAGE__",
+        "api_news_detail_url": "https://www.ordineavvocatiarezzo.it/service/news/detail/",
+        "privacy_local_url":"html/privacy_arezzo.html",
+        "contacts_local_url":"html/contatti_arezzo.html",
+        "login_sfera_enabled": true,
+        "show_privacy_consent": true
+    },   
+    "com.gfl.ordine-avvocati-salerno":{
+        "colors":{
+          "main_color":"#305D87",
+          "icon_text_color":"#305D87",
+          "menu_background_color":"#305D87",
+          "home_selector_background_color":"white",
+          "giuffre_tint_color":"white",
+          "news_list_cell_background_color":"white",
+          "news_list_cell_title_color":"#305D87"
+        },
+        "api_push_url":"",
+        "x_api_key":"",
+        "menu_list":[
+            { "id": "notizie", "icon": "news", "description": "News", "url":"http://www.ordavvsa.it/index.php?option=com_content&view=category&layout=blog&id=11&Itemid=351" },
+            { "id": "contatti", "icon": "contatti", "description": "Contatti", "list": [
+                {"id": "contatti_0", "icon": "contatti", "description": "Contatti segreteria", "url":"http://www.ordavvsa.it/index.php?option=com_content&view=article&id=40&Itemid=333"},
+                {"id": "contatti_1", "icon": "contatti", "description": "Contatti consiglieri", "url":"http://www.ordavvsa.it/index.php?option=com_content&view=article&id=336&Itemid=331"}
+              ] 
+            },
+            { "id": "amministrazione", "icon": "albo", "description": "Amm. transparente", "url": "http://www.ordavvsa.it/index.php?option=com_content&view=article&id=1940&Itemid=427" },
+            { "id": "ricercaavvocato", "icon": "avvocati", "description": "Cerca avv.", "url": "https://iscrivo.dcssrl.it/ISCRIVO-ALBOONLINE/avvsalerno/avvocati" },
+            { "id": "ricercapraticanti", "icon": "avvocati", "description": "Ricerca prat.", "url": "https://iscrivo.dcssrl.it/ISCRIVO-ALBOONLINE/avvsalerno/praticanti" },
+            { "id": "fondazione", "icon": "difese-dufficio", "description": "Fondazione", "url": "http://www.ordavvsa.it/index.php?option=com_content&view=category&id=79&Itemid=425" },
+            { "id": "mediazione", "icon": "albo", "description": "Organismo di mediazione", "url": "https://www.ordavvsa.it/index.php?option=com_content&view=category&id=47&Itemid=154" },
+            { "id": "giustizia", "icon": "albo", "description": "La Giustizia", "url": "http://www.ordavvsa.it/index.php?option=com_content&view=category&id=80&Itemid=426" },
+            { "id": "pof", "icon": "iscrizionecorsi", "description": "POF", "url": "https://www.ordavvsa.it/index.php?option=com_content&view=category&id=32&Itemid=417" },
+            { "id": "ufficio", "icon": "difese-dufficio", "description": "Difesa d'ufficio", "url": "https://www.ordavvsa.it/index.php?option=com_content&view=category&id=70&Itemid=386" },
+            { "id": "codici", "icon": "codici", "description": "Codici" },
+            { "id": "avvocati", "icon": "avvocati", "description": "Avvocati.it", "url": "https://avvocati.it/" },
+            { "id": "servizionline", "icon": "contatti", "description": "Servizi Online", "list": [
+                {"id": "servizionline_0", "icon": "contatti", "description": "Protocolli", "url":"http://www.ordavvsa.it/index.php?option=com_content&view=category&id=9&Itemid=380"},
+                {"id": "servizionline_1", "icon": "archivio", "description": "Gratuito patrocinio (GP)", "url":"https://www.ordavvsa.it/index.php?option=com_content&view=category&id=59&Itemid=387"},
+                {"id": "servizionline_4", "icon": "contatti", "description": "Piattaforma riconosco", "url":"http://www.ordavvsa.it/index.php?option=com_content&view=article&id=1734&Itemid=419"}
+              ] 
+            },
+            { "id": "antiriciclaggioeprivacy", "icon": "privacy", "description": "Antiricilaggio e privacy", "url": "http://www.ordavvsa.it/index.php?option=com_content&view=article&id=1577&Itemid=388" },
+            { "id": "avvocatistabilitintegrati", "icon": "avvocati", "description": "Avv. stabiliti e integrati", "url": "https://www.ordavvsa.it/index.php?option=com_content&view=category&id=44&Itemid=153" },
+            { "id": "cassaforense", "icon": "biblioteca", "description": "Cassa Forense", "url": "https://www.ordavvsa.it/index.php?option=com_content&view=category&id=14&Itemid=382" },
+            { "id": "consigliodisciplina", "icon": "consiglio", "description": "Consiglio di disciplina", "url": "https://www.ordavvsa.it/index.php?option=com_content&view=category&id=73&Itemid=381" },
+            { "id": "eventiformazione", "icon": "iscrizionecorsi", "description": "Eventi e formazione", "url": "https://www.ordavvsa.it/index.php?option=com_content&view=category&id=36&Itemid=423" }
+          ],
+        "privacy_url":"https://mementopiu.it/Repository/privacypolicy_mementopiu.pdf",
+        "id_gestore": "1007",
+        "api_news_url": "",
+        "api_news_detail_url": "",
+        "privacy_local_url":"html/privacy_salerno.html",
+        "login_sfera_enabled": false,
+        "show_privacy_consent": true,
+        "cookie_privacy": [{
+          "website": "https://www.ordavvsa.it/",
+          "domain": "www.ordavvsa.it",
+          "path": "/",
+          "name": "fmalertcookies",
+          "value_positive":"true",
+          "value_negative":"false"
+        },
+        {
+          "website": "https://sfera.sferabit.com/",
+          "domain": "sfera.sferabit.com",
+          "path": "/",
+          "name": "elmo_vc",
+          "value_positive":"",
+          "value_negative":"{\"level\":[\"necessary\"],\"revision\":2269323,\"data\":{\"uid\":790026382},\"rfc_cookie\":false}"
+        },
+        {
+          "website": "https://avvocati.it/",
+          "domain": ".avvocati.it",
+          "path": "/",
+          "name": "OptanonAlertBoxClosed",
+          "value_positive":"",
+          "value_negative":"0"
+        }]
+    },   
+    "com.gfl.ordine-avvocati-siena":{
+        "colors":{
+          "main_color":"#B99F6E",
+          "icon_text_color":"#B99F6E",
+          "menu_background_color":"#B99F6E",
+          "home_selector_background_color":"transparent",
+          "giuffre_tint_color":"white",
+          "news_list_cell_background_color":"white",
+          "news_list_cell_title_color":"#B99F6E"
+        },
+        "api_push_url":"https://e62lfsnfgj.execute-api.eu-central-1.amazonaws.com/prod/push",
+        "x_api_key":"p5kkv6wyQN2NAPgIW32GE2mD7RDOJJp85lUqrhS3",
+        "menu_list":[
+            { "id": "notizie", "icon": "news", "description": "News", "url":"http://www.ordineavvocatisiena.it/news" },
+            { "id": "contacts", "icon": "contatti", "description": "Contatti", "url": "https://www.ordineavvocatisiena.it/node/72" },
+            { "id": "sfera", "icon": "SF_home", "description": "Login Sfera" },
+            { "id": "albo", "icon": "albo", "description": "Albo", "url": "https://sfera.sferabit.com/servizi/alboonline/index.php?id=1131" },
+            { "id": "codici", "icon": "codici", "description": "Codici" },
+            { "id": "avvocati", "icon": "avvocati", "description": "Avvocati.it", "url": "https://avvocati.it/" },
+            { "id": "ricercaavvocato", "icon": "avvocati", "description": "Modulistica avvocati", "url": "https://www.ordineavvocatisiena.it/node/202" },
+            { "id": "ricercapraticanti", "icon": "avvocati", "description": "Modulistica praticanti", "url": "https://www.ordineavvocatisiena.it/node/206" },
+            { "id": "contatti", "icon": "contatti", "description": "Fonti" }
+          ],
+        "privacy_url":"https://mementopiu.it/Repository/privacypolicy_mementopiu.pdf",
+        "id_gestore": "1131",
+        "api_news_url": "",
+        "api_news_detail_url": "",
+        "privacy_local_url":"html/privacy_siena.html",
+        "contacts_local_url":"html/contatti_siena.html",
+        "login_sfera_enabled": true,
+        "show_privacy_consent": true,
+        "cookie_privacy": [{
+          "website": "https://www.ordineavvocatisiena.it/",
+          "domain": "www.ordineavvocatisiena.it",
+          "path": "/",
+          "name": "cookie-agreed",
+          "value_positive":"2",
+          "value_negative":"0"
+        },
+        {
+          "website": "https://sfera.sferabit.com/",
+          "domain": "sfera.sferabit.com",
+          "path": "/",
+          "name": "elmo_vc",
+          "value_positive":"",
+          "value_negative":"{\"level\":[\"necessary\"],\"revision\":2269323,\"data\":{\"uid\":790026382},\"rfc_cookie\":false}"
+        },
+        {
+          "website": "https://avvocati.it/",
+          "domain": ".avvocati.it",
+          "path": "/",
+          "name": "OptanonAlertBoxClosed",
+          "value_positive":"",
+          "value_negative":"0"
+        }]
+    },
+    "com.gfl.ordine-avvocati-como":{
+      "colors":{
+        "main_color":"#BEA471",
+        "icon_text_color":"#FFFFFF",
+        "menu_background_color":"#BEA471",
+        "home_selector_background_color":"transparent",
+        "giuffre_tint_color":"white",
+        "news_list_cell_background_color":"white",
+        "news_list_cell_title_color":"#BEA471"
+      },
+      "api_push_url":"https://onbkku6i8k.execute-api.eu-central-1.amazonaws.com/prod/push",
+      "x_api_key":"IIrSpgDApQ49e1nuCzsx9x5lsFma5Jh5b3I0f9W5",
+      "menu_list":[
+          { "id": "news_1", "icon": "news", "description": "News" },
+          { "id": "circolari", "icon": "albo", "description": "Circolari", "url": "http://www.ordineavvocaticomo.it/index.php/site/page/20" },
+          { "id": "consiglio", "icon": "consiglio", "description": "Consiglio", "url": "http://www.ordineavvocaticomo.it/index.php/site/page/6" },
+          { "id": "sfera", "icon": "SF_home", "description": "Login Sfera"},
+          { "id": "albo", "icon": "albo", "description": "Albo", "url": "https://sfera.sferabit.com/servizi/alboonline/indexAlbi.php?id=1038" },
+          { "id": "areaavvocati", "icon": "avvocati", "description": "Area Avvocati", "url": "http://www.ordineavvocaticomo.it/index.php/site/page/96" },
+          
+          { "id": "pariopportunita", "icon": "difese-dufficio", "description": "Pari Opportunità", "url": "http://www.ordineavvocaticomo.it/index.php/site/page/59" },
+          { "id": "deontologia", "icon": "albo", "description": "Deontologia", "url": "http://www.ordineavvocaticomo.it/index.php/site/page/23" },
+          { "id": "sportellocittadino", "icon": "difese-dufficio", "description": "Sportello", "url": "http://www.ordineavvocaticomo.it/index.php/site/page/25" },
+          
+          { "id": "mediazione", "icon": "albo", "description": "Organismo di mediazione", "url": "http://www.ordineavvocaticomo.it/index.php/site/page/81" },
+          { "id": "patrocinio", "icon": "archivio", "description": "Patrocinio a spese dello stato", "url": "http://www.ordineavvocaticomo.it/index.php/site/page/43" },
+          { "id": "formazione", "icon": "biblioteca", "description": "Formazione", "url": "http://www.ordineavvocaticomo.it/index.php/site/page/47" },
+          { "id": "codici", "icon": "codici", "description": "Codici" },
+          { "id": "avvocati", "icon": "avvocati", "description": "AVVOCATI.IT", "url": "https://avvocati.it/" },
+          { "id": "privacy", "icon": "privacy", "description": "Privacy", "url": "http://www.ordineavvocaticomo.it/index.php/site/page/87"  },
+          { "id": "contatti", "icon": "contatti", "description": "Fonti" },
+          { "id": "gfl_como", "icon": "consiglio", "description": "GFL Como", "url":"https://agenziacomolecco.giuffrefl.it/index.php?pag=contatti" }
+        ],
+      "privacy_url":"http://www.ordineavvocaticomo.it/index.php/site/page/87",
+      "id_gestore": "1038",
+      "api_news_url": "http://www.ordineavvocaticomo.it/index.php/site/news/json",
+      "api_news_detail_url": "http://www.ordineavvocaticomo.it/index.php/site/news/json?id=",
+      "privacy_local_url":"html/privacy_como.html",
+      "contacts_local_url":"html/contatti_como.html",
+      "login_sfera_enabled": true,
+      "show_privacy_consent": true,
+      "cookie_privacy": [{
+        "website": "https://www.ordineavvocaticomo.it/",
+        "domain": "www.ordineavvocaticomo.it",
+        "path": "/",
+        "name": "cookie-agreed",
+        "value_positive":"2",
+        "value_negative":"0"
+      },
+      {
+        "website": "https://sfera.sferabit.com/",
+        "domain": ".sfera.sferabit.com",
+        "path": "/",
+        "name": "elmo_vc",
+        "value_positive":"",
+        "value_negative":"{\"level\":[\"necessary\"],\"revision\":2269323,\"data\":{\"uid\":790026382},\"rfc_cookie\":false}"
+      },
+      {
+        "website": "https://avvocati.it/",
+        "domain": ".avvocati.it",
+        "path": "/",
+        "name": "OptanonAlertBoxClosed",
+        "value_positive":"",
+        "value_negative":"0"
+      }]
+    },
+    "com.gfl.ordine-avvocati-di-rimini":{
+      "colors":{
+        "main_color":"#3F4A65",
+        "icon_text_color":"#3F4A65",
+        "homeHamburgerMenuColor":"#3F4A65",
+        "menu_background_color":"#3F4A65",
+        "home_selector_background_color":"transparent",
+        "giuffre_tint_color":"#3F4A65",
+        "news_list_cell_background_color":"white",
+        "news_list_cell_title_color":"#3F4A65"
+      },
+      "api_push_url":"https://jpj3vwgtug.execute-api.eu-central-1.amazonaws.com/prod/push",
+      "x_api_key":"or1k2jAGz72fiBBuAYFe64tpSWRCiG6Z1qppRdTV",
+      "menu_list":[
+          { "id": "contatti", "icon": "contatti", "description": "Contatti", "list": [
+              {"id": "contatti_segreteria", "icon": "contatti", "description": "Segreteria", "url":"https://www.avvocati.rimini.it/segreteria/"},
+              {"id": "contatti_consiglio", "icon": "contatti", "description": "Il Consiglio", "url":"https://www.avvocati.rimini.it/comunicazioni-2/"},
+              {"id": "contatti_area", "icon": "contatti", "description": "Area Consiglieri", "url":"https://www.avvocati.rimini.it/commissioni/"}
+            ]
+          },
+          { "id": "utilita", "icon": "news", "description": "Utilità", "url":"https://www.fallcoweb.it/prenotazioni/rimini/index" },
+          { "id": "codici", "icon": "codici", "description": "Codici" },
+          { "id": "avvocati", "icon": "avvocati", "description": "Avvocati.it", "url":"https://avvocati.it/" },
+          { "id": "notizie", "icon": "news", "description": "News", "url":"https://www.avvocati.rimini.it/comunicazione-agli-iscritti/" },
+          { "id": "ricerca_iscritti", "icon": "avvocati", "description": "Ricerca iscritti", "url": "https://sfera.sferabit.com/servizi/alboonline/index.php?id=1117" },
+          { "id": "privacy", "icon": "privacy", "description": "Privacy", "url": "https://www.avvocati.rimini.it/privacy-policy/" }
+        ],
+      "privacy_url":"https://mementopiu.it/Repository/privacypolicy_mementopiu.pdf",
+      "id_gestore": "1117",
+      "api_news_url": "",
+      "api_news_detail_url": "",
+      "privacy_local_url":"html/privacy_rimini.html",
+      "login_sfera_enabled": false,
+      "show_privacy_consent": true,
+      "cookie_privacy": [{
+        "website": "https://www.avvocati.rimini.it/",
+        "domain": "www.avvocati.rimini.it",
+        "path": "/",
+        "name": "cookie_notice_accepted",
+        "value_positive":"true",
+        "value_negative":"false"
+      },
+      {
+        "website": "https://www.fallcoweb.it/",
+        "domain": "www.fallcoweb.it",
+        "path": "/",
+        "name": "cookie_law_accepted",
+        "value_positive":"true",
+        "value_negative":"{\"data_acceptance\":\"2022-08-08T09:01:34.250Z\",\"cookie\":{\"tecnici\":{\"version\":\"1.0\"}}}"
+      },
+      {
+        "website": "https://sfera.sferabit.com/",
+        "domain": "sfera.sferabit.com",
+        "path": "/",
+        "name": "elmo_vc",
+        "value_positive":"",
+        "value_negative":"{\"level\":[\"necessary\"],\"revision\":2269323,\"data\":{\"uid\":790026382},\"rfc_cookie\":false}"
+      },
+      {
+        "website": "https://avvocati.it/",
+        "domain": ".avvocati.it",
+        "path": "/",
+        "name": "OptanonAlertBoxClosed",
+        "value_positive":"",
+        "value_negative":"0"
+      }]
+    },
+    "com.gfl.ordine-avvocati-benevento":{
+      "colors":{
+        "main_color":"#093558",
+        "icon_text_color":"#093558",
+        "menu_background_color":"#093558",
+        "home_selector_background_color":"transparent",
+        "giuffre_tint_color":"white",
+        "news_list_cell_background_color":"white",
+        "news_list_cell_title_color":"#093558"
+      },
+      "api_push_url":"https://fg8108f78h.execute-api.eu-central-1.amazonaws.com/prod/push",
+      "x_api_key":"yEAN9M06BB3Sm4BJyEBVY4xSQhBfBgwbj1nk5u40",
+      "menu_list":[
+          { "id": "news_1", "icon": "news", "description": "News" },
+          { "id": "contatti", "icon": "contatti", "description": "Contatti", "url": "https://ordineavvocati.bn.it/contatti/" },
+          { "id": "modulistica", "icon": "albo", "description": "Modulistica", "url": "https://ordineavvocati.bn.it/modulistica/" },
+          
+          { "id": "sfera_mediazioni", "icon": "SF_home", "description": "Login Sfera Mediazioni", "url":"https://sfera.sferabit.com/servizi/accesso.php?nomeLink=coabenevento"},
+          
+          { "id": "login_riconosco", "icon": "avvocati", "description": "Login Riconosco", "url": "https://riconosco.dcssrl.it/login.jspx"},
+          { "id": "lesentenze", "icon": "avvocati", "description": "LeSentenze.it", "url": "https://www.lesentenze.it/"},
+          { "id": "alboavvocati", "icon": "albo", "description": "Albo Avvocati", "url": "https://ordineavvocati.bn.it/albo-avvocati/" },
+          { "id": "codici", "icon": "codici", "description": "Codici" },
+          { "id": "avvocati", "icon": "avvocati", "description": "AVVOCATI.IT", "url": "https://avvocati.it/" },
+          { "id": "pec_aruba", "icon": "avvocati", "description": "PEC Aruba", "url": "https://login.aruba.it/auth/realms/pec/protocol/openid-connect/auth?client_id=pec-webmail&state=arubapec&scope=openid&response_type=code&redirect_uri=https%3A%2F%2Fwebmail.pec.it%2Fauthentipec.php&kc_locale=it" },
+          { "id": "pec_legalmail", "icon": "avvocati", "description": "PEC Legalmail", "url": "https://webmail.infocert.it/legalmail/#/login" },
+          { "id": "privacy", "icon": "privacy", "description": "Privacy", "url": "https://ordineavvocati.bn.it/privacy/"  },
+          { "id": "polisweb", "icon": "albo", "description": "Polisweb e Quadra", "url": "https://idp.accessogiustizia.it/idp/Authn/UserPassword#!"  },
+          { "id": "uffici_giudiziari", "icon": "difese-dufficio", "description": "Uffici Giudiziari", "url": "https://ordineavvocati.bn.it/provvedimenti-uffici-giudiziari/"  }
+        ],
+      "privacy_url":"https://ordineavvocati.bn.it/privacy/",
+      "id_gestore": "",
+      "api_news_url": "https://ordineavvocati.bn.it/wp-content/plugins/ccw_giuffre/feed.php",
+      "api_news_detail_url": "https://ordineavvocati.bn.it/wp-content/plugins/ccw_giuffre/feed.php?id=",
+      "privacy_local_url":"html/privacy_benevento.html",
+      "contacts_local_url":"html/contatti_benevento.html",
+      "login_sfera_enabled": false,
+      "show_privacy_consent": true,
+      "cookie_privacy": [{
+        "website": "https://www.ordineavvocati.bn.it/",
+        "domain": "www.ordineavvocati.bn.it",
+        "path": "/",
+        "name": "CookieConsent",
+        "value_positive":"2",
+        "value_negative":"{stamp:'WAzptDe4bSAGOrTGZo2Hn0K2BZDFhGsoke1qZ89iBXV4GSNoR3HFzg==',necessary:true,preferences:false,statistics:false,marketing:false,ver:1,utc:1665392817744,region:'it'}"
+      },
+      {
+        "website": "https://sfera.sferabit.com/",
+        "domain": ".sfera.sferabit.com",
+        "path": "/",
+        "name": "elmo_vc",
+        "value_positive":"",
+        "value_negative":"{\"level\":[\"necessary\"],\"revision\":2269323,\"data\":{\"uid\":790026382},\"rfc_cookie\":false}"
+      },
+      {
+        "website": "https://avvocati.it/",
+        "domain": ".avvocati.it",
+        "path": "/",
+        "name": "OptanonAlertBoxClosed",
+        "value_positive":"",
+        "value_negative":"0"
+      },
+      {
+        "website": "https://webmail.infocert.it/",
+        "domain": ".infocert.it",
+        "path": "/",
+        "name": "OptanonAlertBoxClosed",
+        "value_positive":"",
+        "value_negative":"0"
+      },
+      {
+        "website": "https://riconosco.dcssrl.it/",
+        "domain": ".riconosco.dcssrl.it",
+        "path": "/",
+        "name": "notAcceptedPrivacy",
+        "value_positive":"",
+        "value_negative":"false"
+      },
+      {
+        "website": "https://www.lesentenze.it/",
+        "domain": "www.lesentenze.it",
+        "path": "/",
+        "name": "cookiebar",
+        "value_positive":"",
+        "value_negative":"true"
+      },
+      {
+        "website": "https://quadrafree.accessogiustizia.it/",
+        "domain": "quadrafree.accessogiustizia.it",
+        "path": "/",
+        "name": "visura_cookie_policy",
+        "value_positive":"",
+        "value_negative":"3108197625091979"
+      }]
+    }
+}
